@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Registros</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="toggleTheme"><i class="fas fa-adjust"></i> Alterar Tema</button>
+  </div>
+  <div class="container">
+    <h1>Gerenciador de Registros</h1>
+    <form id="recordForm">
+      <input type="text" id="name" placeholder="Digite o nome" required>
+      <input type="email" id="email" placeholder="Digite o e-mail" required>
+      <button type="submit"><i class="fas fa-plus"></i> Adicionar</button>
+    </form>
+    <div id="message" class="hidden"></div>
+    <h2>Registros Salvos</h2>
+    <ul id="recordsList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
